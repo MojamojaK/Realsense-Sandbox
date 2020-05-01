@@ -88,7 +88,7 @@ int main(void)
 			{
 				rs2::syncer syncer;
 				std::cout << "[INFO] rs2::syncer constructed" << std::endl;
-				/*
+				
 				std::cout << "[INFO] Opening / Starting Sensors" << std::endl;
 				color_sensor.open(color_stream_profile);
 				depth_sensor.open(depth_stream_profile);
@@ -106,7 +106,6 @@ int main(void)
 				color_sensor.close();
 				depth_sensor.close();
 				std::cout << "[INFO] Stopping / Closing Sensors Complete" << std::endl;
-				*/
 			}
 			std::cout << "[INFO] rs2::syncer should be destroyed" << std::endl;
 			std::cout << "[INFO] Take a snapshot of memory here" << std::endl;
