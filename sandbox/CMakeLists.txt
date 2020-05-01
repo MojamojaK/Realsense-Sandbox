@@ -15,4 +15,4 @@ find_package(OpenCV REQUIRED HINTS ${PRECOMPILED_LIBS}/OpenCV)
 # Realsense Sandbox
 add_executable(realsense_sandbox src/realsense_sandbox.cpp)
 target_include_directories(realsense_sandbox PRIVATE ${OpenCV_INCLUDE_DIRS} ${rs2_DIR}/include include)
-target_link_libraries(realsense_sandbox spdlog fmt ${OpenCV_LIBS} realsense2)
+target_link_libraries(realsense_sandbox spdlog fmt ${OpenCV_LIBS} realsense2d)
