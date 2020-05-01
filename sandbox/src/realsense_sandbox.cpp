@@ -115,6 +115,14 @@ int main(void)
 			std::cin >> input;
 			if (input == "q")
 			{
+				try
+				{
+					color_sensor.stop();
+					depth_sensor.stop();
+					color_sensor.close();
+					depth_sensor.close();
+				}
+				catch (const rs2::wrong_api_call_sequence_error &) { /*pass*/ }
 				break;
 			}
 		}
